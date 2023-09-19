@@ -10,23 +10,45 @@
         android:id="@+id/message_edit_text"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter the message"
         android:layout_margin="60dp"
-        app:layout_constraintBottom_toTopOf="@id/message_submit_btn"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:hint="Enter the message"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/message_submit_btn"
-        android:onClick="submitMessage"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Submit"
+        android:onClick="submitMessage"
         android:padding="20dp"
+        android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:text="Goodbye"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/message_edit_text" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heloo"
+        app:layout_constraintTop_toBottomOf="@+id/message_edit_text"
+        tools:layout_editor_absoluteX="60dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
